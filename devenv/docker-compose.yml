@@ -1,0 +1,11 @@
+version: "3"
+services:
+  dev_env:
+    build: .
+    container_name: muap-docker
+    ports:
+      - 10080:10000
+    volumes:
+      - ../:/home/app
+
+
